@@ -1,0 +1,19 @@
+.negro {background-color: grey;}
+.menu {
+    background-color: grey;
+    color: aliceblue;
+}
+ol {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+body {
+    background-color: rgb(224, 191, 130);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#rojo {
+    color: brown;
+}
+#blanco {
+    color: aliceblue;
+}
