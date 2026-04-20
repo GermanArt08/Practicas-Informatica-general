@@ -1,0 +1,15 @@
+header
+{background-color: black;}
+nav
+{background-color: rgb(175, 8, 8);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: aliceblue;}
+span{
+    color: rgb(204, 180, 42);
+    font-weight: bolder;
+}
+#gris{background-color: rgb(63, 2, 2);
+color: rgb(245, 169, 27);}
+#reparto{background-color: rgb(175, 8, 8);
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: aliceblue;}
