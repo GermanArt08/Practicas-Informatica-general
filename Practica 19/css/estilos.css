@@ -1,0 +1,75 @@
+/* estilos.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #4a90e2;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #4a90e2;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #a0c4ff;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #81c4ff;
+    margin: 30px 0 15px 0;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+ul li {
+    font-size: 1.1rem;
+    padding: 8px 0;
+    position: relative;
+    padding-left: 25px;
+    color: #cccccc;
+}
+
+ul li:before {
+    content: "•";
+    color: #4a90e2;
+    position: absolute;
+    left: 0;
+    font-size: 1.4rem;
+}
+
+/* Efectos suaves */
+header:hover {
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}

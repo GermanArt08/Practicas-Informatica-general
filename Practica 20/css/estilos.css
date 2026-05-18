@@ -1,0 +1,88 @@
+* { box-sizing: border-box; }
+body {
+	margin: 0;
+	padding: 0;
+	background: burlywood;
+	font-family: "Hanken Grotesk", sans-serif;
+}
+#contenedor {
+    width: 100%;
+    max-width: 960px;
+}
+header {
+	background: rgb(150, 101, 11);
+	padding: 1em;
+	text-align: center;
+    border-style: dashed;
+}
+footer {
+    background-color: rgb(150, 101, 11);
+    padding: 1em;
+    border-style: dashed;
+}
+main {
+	padding: 2em;
+	background: white;
+    border-style: double;
+}
+h1 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+h2 {
+	font-weight: 700;
+}
+li {
+	line-height: 1.8em;
+}
+.actual {
+    color: rgb(150, 101, 11);
+}
+a:link {
+	color: rgb(255, 246, 127);
+}
+a:visited {
+	color: rgb(255, 188, 65);
+}
+a:hover {
+	color: red;
+}
+a:active {
+	color: red;
+}
+nav {
+	background-color: burlywood;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+nav li {
+	display: inline-block;	
+    border-style: dashed;
+}
+nav a {
+	font-size: 0.9em;
+	line-height: 2.2em;
+	padding: 0.4em 10em;
+	text-align: center;
+	text-decoration: none;
+}
+nav a:link {
+	background-color: burlywood;
+	color: #000;
+}
+nav a:visited {
+	background-color: brown;
+	color: #000;
+}
+nav a:hover {
+	background-color: #000;
+	color: #FFF;
+}
+nav a:active {
+	background-color: rgb(150, 101, 11);
+	color: brown;
+}
