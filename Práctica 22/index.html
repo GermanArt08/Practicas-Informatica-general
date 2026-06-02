@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Precio y descuento</title>
+</head>
+<body>
+    <h1>Calculadora de Precio con Descuento</h1>
+    
+    <form id="formulario" action="#" method="get">
+        <label for="precio">Precio original:</label><br>
+        <input type="number" id="precio" name="precio" required><br><br>
+
+        <label for="descuento">Descuento (%):</label><br>
+        <input type="number" id="descuento" name="descuento" min="0" max="100" required><br><br>
+
+        <input type="button" id="calcular" value="Calcular">
+    </form>
+
+    <div id="resultado"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

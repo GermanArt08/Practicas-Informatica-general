@@ -1,0 +1,71 @@
+/* ====================== ESTILOS GENERALES ====================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5e8d3;
+    color: #3c2f2f;
+    line-height: 1.6;
+}
+
+#contenedor {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+
+header {
+    background-color: #8d5524;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 8px;
+}
+
+
+main {
+    padding: 40px 30px;
+}
+
+#seccionInstrucciones {
+    background-color: #fff9e6;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 8px solid #d4a017;
+}
+
+#seccionInstrucciones h2 {
+    color: #8d5524;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+#seccionInstrucciones ol {
+    font-size: 1.1rem;
+}
+
+#seccionInstrucciones li {
+    margin-bottom: 12px;
+    padding-left: 8px;
+}
+
+footer {
+    background-color: #3c2f2f;
+    color: #e8d5b8;
+    text-align: center;
+    padding: 25px;
+    font-size: 1.2rem;
+}
+*/
