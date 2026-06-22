@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Presupuesto</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+        </fieldset>
+        <fieldset>
+            <legend>Datos para alquilar</legend>
+
+            <label for ="dias">Días:</label>
+            <input type="number" id="dias" name="dias">
+
+            <label for ="cantProyector">Proyector:</label>
+            <input type="number" id="cantProyector" name="cantProyector">
+
+            <label for ="cantComputadora">Computadora:</label>
+            <input type="number" id="cantComputadora" name="cantComputadora">
+
+            <label for ="cantPantalla">Pantalla:</label>
+            <input type="number" id="cantPantalla" name="cantPantalla">
+        </fieldset>
+        <button type="button" id="boton">Calcular presupuesto</button>
+        <div id="resultado"></div>
+    </form>    
+<script src="js/script.js"></script>
+</body>
+</html>
