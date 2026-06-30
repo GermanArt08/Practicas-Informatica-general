@@ -1,20 +1,15 @@
-const cantidad = 5;
-let corrredores = [];
+const cantidad = 3;
+let corredores = [];
 
-let formIngresarDatos = document.querySelector ("#ingresarDatos");
-let boton = document.querySelector ("#boton");
-let lista = document.querySelector ("#lista");
-
-let contador = 0;
-let ganador;
-let promedio;
-let masRapidoProm;
+const formIngresarDatos = document.querySelector ("#ingresarDatos");
+const boton = document.querySelector ("#boton");
+let lista = document.querySelector (".listado");
 
 boton .addEventListener ("click", function(e){
-    e.preventDefault
+    e.preventDefault ()
     ingresarDatos ()
 });
-
+// Validaciones
 function ingresarDatos() {
 
     let nombre = document.querySelector("#nombre").value
@@ -45,14 +40,14 @@ function ingresarDatos() {
         return false;
     }
 
-    let corredor = {
+    const corredor = {
         nombre: nombre,
         apellido: apellido,
-        edad: edad,
-        num: num,
-        tiempo: tiempo,
+        edad: Number(edad),
+        num: Number(num),
+        tiempo: Number(tiempo),
     }
-    corrredores.push(corredor)
+    corredores.push(corredor)
     alert ("Datos ingresados correctamente")
 
     vaciarFormulario();
@@ -67,14 +62,37 @@ function vaciarFormulario () {
     verificarCantDatos();
 }
 function verificarCantDatos() {
-    if (corrredores.length>=cantidad)
+    if (corredores.length>=cantidad) {
         boton.disabled = true;
-        for (let i=0; i<=cantidad; i++) {
-        contador += tiempo[i];
+    calcularResultados();
+    }
 }
-promedio = contador/cantidad;
-}
-if(corrredores.lenght>=cantidad) { 
-let listado = document.querySelector(".listado");
-listado.innerHTML = (`El promedio de tiempor es de ${promedio.value}s`)
+function calcularResultados() {
+    let totalTiempo = 0;
+    let ganador = corredores[0];
+
+    for (let i=0; i < corredores.length; i++) {
+        totalTiempo += corredores[i].tiempo;
+        if (corredores[i].tiempo < ganador.tiempo) {
+            ganador = corredores[i];
+        }
+    }
+    const promedio = totalTiempo / corredores.length;
+
+    let arribaPromedio = 0;
+    for (let i=0; i < corredores.length; i++) {
+        if (corredores[i].tiempo > promedio) {
+            arribaPromedio++;
+        }
+    }
+    const porcentajeArriba = Math.round((arribaPromedio / corredores.length) *100);
+
+    // Mostrar resultados
+lista.innerHTML = `
+        <h2>Resultados de la carrera</h2>
+        <p><strong>Ganador:</strong> ${ganador.nombre} ${ganador.apellido} 
+           (N° ${ganador.num}) - Tiempo: ${ganador.tiempo}s</p>
+        <p><strong>Promedio de tiempo:</strong> ${promedio} segundos</p>
+        <p><strong>Corredores por encima del promedio:</strong> ${arribaPromedio} (${porcentajeArriba}%)</p>
+    `;
 }
